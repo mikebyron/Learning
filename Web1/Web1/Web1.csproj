@@ -51,6 +51,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Commands.js" />
     <Content Include="Edit.htm" />
     <Content Include="HTMLPage1.htm" />
     <Content Include="Web.config" />
