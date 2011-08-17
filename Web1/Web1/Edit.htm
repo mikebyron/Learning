@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Test Editor</title>
+     <script type="text/javascript">
+
+         // Example script code to load.
+         function exampleScript(x, y) {
+             // Simple calcs.
+             var foo = x * x;
+             var bar = "Result: " + foo;
+             if (foo > y) {
+                 // Make sure we have a conditional.
+                 bar += ", and y = " + y;
+             }
+
+             return bar;
+         }
+
+         // Get changes in textarea.
+         function onKeyPress() {
+         }
+
+         // Called when the window loads.
+         function onWindowLoad() {
+             var myText = document.getElementById("myText");
+             myText.innerHTML = exampleScript;
+         }
+
+     </script>
+</head>
+<body onload="onWindowLoad()" >
+<textarea cols="120" rows="40" id="myText" onkeypress="onKeyPress()"></textarea>
+</body>
+</html>
